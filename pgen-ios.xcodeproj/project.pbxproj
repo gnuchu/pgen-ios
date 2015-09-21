@@ -7,25 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE3209B61B94D5FE0071C6EE /* PasswordGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3209B51B94D5FE0071C6EE /* PasswordGenerator.swift */; settings = {ASSET_TAGS = (); }; };
 		AE667A851B939C5E00439F29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE667A841B939C5E00439F29 /* AppDelegate.swift */; };
 		AE667A871B939C5E00439F29 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE667A861B939C5E00439F29 /* ViewController.swift */; };
 		AE667A8A1B939C5E00439F29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE667A881B939C5E00439F29 /* Main.storyboard */; };
 		AE667A8C1B939C5E00439F29 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE667A8B1B939C5E00439F29 /* Images.xcassets */; };
 		AE667A8F1B939C5E00439F29 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE667A8D1B939C5E00439F29 /* LaunchScreen.xib */; };
-		AE667A9B1B939C5E00439F29 /* pgen_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE667A9A1B939C5E00439F29 /* pgen_iosTests.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		AE667A951B939C5E00439F29 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AE667A771B939C5E00439F29 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AE667A7E1B939C5E00439F29;
-			remoteInfo = "pgen-ios";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		AE3209B51B94D5FE0071C6EE /* PasswordGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordGenerator.swift; sourceTree = "<group>"; };
 		AE667A7F1B939C5E00439F29 /* pgen-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "pgen-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE667A831B939C5E00439F29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE667A841B939C5E00439F29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -33,20 +24,10 @@
 		AE667A891B939C5E00439F29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AE667A8B1B939C5E00439F29 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		AE667A8E1B939C5E00439F29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		AE667A941B939C5E00439F29 /* pgen-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "pgen-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AE667A991B939C5E00439F29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AE667A9A1B939C5E00439F29 /* pgen_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pgen_iosTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		AE667A7C1B939C5E00439F29 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AE667A911B939C5E00439F29 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -60,7 +41,6 @@
 			isa = PBXGroup;
 			children = (
 				AE667A811B939C5E00439F29 /* pgen-ios */,
-				AE667A971B939C5E00439F29 /* pgen-iosTests */,
 				AE667A801B939C5E00439F29 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -69,7 +49,6 @@
 			isa = PBXGroup;
 			children = (
 				AE667A7F1B939C5E00439F29 /* pgen-ios.app */,
-				AE667A941B939C5E00439F29 /* pgen-iosTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -83,6 +62,7 @@
 				AE667A8B1B939C5E00439F29 /* Images.xcassets */,
 				AE667A8D1B939C5E00439F29 /* LaunchScreen.xib */,
 				AE667A821B939C5E00439F29 /* Supporting Files */,
+				AE3209B51B94D5FE0071C6EE /* PasswordGenerator.swift */,
 			);
 			path = "pgen-ios";
 			sourceTree = "<group>";
@@ -91,23 +71,6 @@
 			isa = PBXGroup;
 			children = (
 				AE667A831B939C5E00439F29 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		AE667A971B939C5E00439F29 /* pgen-iosTests */ = {
-			isa = PBXGroup;
-			children = (
-				AE667A9A1B939C5E00439F29 /* pgen_iosTests.swift */,
-				AE667A981B939C5E00439F29 /* Supporting Files */,
-			);
-			path = "pgen-iosTests";
-			sourceTree = "<group>";
-		};
-		AE667A981B939C5E00439F29 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				AE667A991B939C5E00439F29 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -132,24 +95,6 @@
 			productReference = AE667A7F1B939C5E00439F29 /* pgen-ios.app */;
 			productType = "com.apple.product-type.application";
 		};
-		AE667A931B939C5E00439F29 /* pgen-iosTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AE667AA11B939C5E00439F29 /* Build configuration list for PBXNativeTarget "pgen-iosTests" */;
-			buildPhases = (
-				AE667A901B939C5E00439F29 /* Sources */,
-				AE667A911B939C5E00439F29 /* Frameworks */,
-				AE667A921B939C5E00439F29 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				AE667A961B939C5E00439F29 /* PBXTargetDependency */,
-			);
-			name = "pgen-iosTests";
-			productName = "pgen-iosTests";
-			productReference = AE667A941B939C5E00439F29 /* pgen-iosTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -162,10 +107,7 @@
 				TargetAttributes = {
 					AE667A7E1B939C5E00439F29 = {
 						CreatedOnToolsVersion = 6.4;
-					};
-					AE667A931B939C5E00439F29 = {
-						CreatedOnToolsVersion = 6.4;
-						TestTargetID = AE667A7E1B939C5E00439F29;
+						DevelopmentTeam = 6U6HLZXDTU;
 					};
 				};
 			};
@@ -183,7 +125,6 @@
 			projectRoot = "";
 			targets = (
 				AE667A7E1B939C5E00439F29 /* pgen-ios */,
-				AE667A931B939C5E00439F29 /* pgen-iosTests */,
 			);
 		};
 /* End PBXProject section */
@@ -199,13 +140,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AE667A921B939C5E00439F29 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -215,26 +149,11 @@
 			files = (
 				AE667A871B939C5E00439F29 /* ViewController.swift in Sources */,
 				AE667A851B939C5E00439F29 /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AE667A901B939C5E00439F29 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AE667A9B1B939C5E00439F29 /* pgen_iosTests.swift in Sources */,
+				AE3209B61B94D5FE0071C6EE /* PasswordGenerator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		AE667A961B939C5E00439F29 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = AE667A7E1B939C5E00439F29 /* pgen-ios */;
-			targetProxy = AE667A951B939C5E00439F29 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		AE667A881B939C5E00439F29 /* Main.storyboard */ = {
@@ -293,7 +212,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -332,7 +251,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -344,10 +263,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "pgen-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gnuchu.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -355,46 +277,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "pgen-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gnuchu.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		AE667AA21B939C5E00439F29 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "pgen-iosTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.gnuchu.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pgen-ios.app/pgen-ios";
-			};
-			name = Debug;
-		};
-		AE667AA31B939C5E00439F29 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "pgen-iosTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.gnuchu.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pgen-ios.app/pgen-ios";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -415,15 +304,6 @@
 			buildConfigurations = (
 				AE667A9F1B939C5E00439F29 /* Debug */,
 				AE667AA01B939C5E00439F29 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		AE667AA11B939C5E00439F29 /* Build configuration list for PBXNativeTarget "pgen-iosTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AE667AA21B939C5E00439F29 /* Debug */,
-				AE667AA31B939C5E00439F29 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

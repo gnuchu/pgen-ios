@@ -7,8 +7,12 @@
 //
 
 import UIKit
+import QuartzCore
+
 
 class ViewController: UIViewController {
+  
+  let password = PasswordGenerator()
   
   @IBOutlet var uppercaseSlider : UISlider!
   @IBOutlet var lowercaseSlider : UISlider!
@@ -20,8 +24,12 @@ class ViewController: UIViewController {
   @IBOutlet var numbersLabel : UILabel!
   @IBOutlet var symbolsLabel : UILabel!
   
+  @IBOutlet var numCallsLabel : UILabel!
+  
   @IBOutlet var passwordField : UILabel!
-
+  
+  var numberCalls : Int = 0
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
@@ -31,30 +39,47 @@ class ViewController: UIViewController {
     numbersSlider.continuous = false
     symbolsSlider.continuous = false
     
-    passwordField.text = "Blah"
+    self.resetPasswordInView(self)
   }
 
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
     // Dispose of any resources that can be recreated.
   }
-
+  
+  override func shouldAutorotate() -> Bool {
+    return false
+  }
+  
 }
 
 extension ViewController {
   @IBAction func refreshPassword (sender: UIButton) {
-    
+    self.resetPasswordInView(self)
   }
   
   @IBAction func copyPassword (sender: UIButton) {
-    
+    UIPasteboard.generalPasteboard().string = passwordField.text
   }
   
   @IBAction func resetPasswordInView (sender: AnyObject) {
-    uppercaseLabel.text = NSString(format: "%0f", uppercaseSlider.value) as String
-    lowercaseLabel.text = NSString(format: "%0f", lowercaseSlider.value) as String
-    numbersLabel.text = NSString(format: "%0f", numbersSlider.value) as String
-    symbolsLabel.text = NSString(format: "%0f", symbolsSlider.value) as String
+    
+    numberCalls++
+    
+    password.lowercase = Int(lowercaseSlider.value)
+    password.uppercase = Int(uppercaseSlider.value)
+    password.numbers = Int(numbersSlider.value)
+    password.symbols = Int(symbolsSlider.value)
+    
+    uppercaseLabel.text = NSString(format: "%d", Int(uppercaseSlider.value)) as String
+    lowercaseLabel.text = NSString(format: "%d", Int(lowercaseSlider.value)) as String
+    numbersLabel.text = NSString(format: "%d", Int(numbersSlider.value)) as String
+    symbolsLabel.text = NSString(format: "%d", Int(symbolsSlider.value)) as String
+    
+    passwordField.text = password.generate()
+    
+    numCallsLabel.text = numberCalls.description
+    
   }
 }
 
