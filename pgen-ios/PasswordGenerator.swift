@@ -28,7 +28,7 @@ extension Array {
     var newArray = self
     for i in (0..<newArray.count) {
       let j = Int(arc4random()) % newArray.count
-      newArray.insert(newArray.removeAtIndex(j), atIndex: i)
+      newArray.insert(newArray.remove(at: j), at: i)
     }
     return newArray
   }
@@ -43,15 +43,15 @@ extension String {
       }
       return items
     }
-    return self.componentsSeparatedByString(bySeparator)
+    return self.components(separatedBy: bySeparator)
   }
 }
 
 class PasswordGenerator {
-  let lowercaseSet = "abcdefghijklmnopqrstuvwxyz".split("")
-  let uppercaseSet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("")
-  let symbolSet    = "!@#$%^&*?".split("")
-  let numberSet    = "0123456789".split("")
+  let lowercaseSet = "abcdefghijklmnopqrstuvwxyz".split(bySeparator: "")
+    let uppercaseSet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split(bySeparator: "")
+    let symbolSet    = "!@#$%^&*?".split(bySeparator: "")
+    let numberSet    = "0123456789".split(bySeparator: "")
   
   var numbers   = 5
   var lowercase = 5
@@ -60,10 +60,10 @@ class PasswordGenerator {
   
   func generate() -> String {
     var password: [String] = []
-    password += lowercaseSet.randomItems(lowercase)
-    password += uppercaseSet.randomItems(uppercase)
-    password += numberSet.randomItems(numbers)
-    password += symbolSet.randomItems(symbols)
+    password += lowercaseSet.randomItems(total: lowercase)
+    password += uppercaseSet.randomItems(total: uppercase)
+    password += numberSet.randomItems(total: numbers)
+    password += symbolSet.randomItems(total:symbols)
     return password.shuffleItems().reduce("") { (a, b) -> String in a+b }
   }
 }

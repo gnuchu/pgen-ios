@@ -34,12 +34,12 @@ class ViewController: UIViewController {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
     
-    uppercaseSlider.continuous = false
-    lowercaseSlider.continuous = false
-    numbersSlider.continuous = false
-    symbolsSlider.continuous = false
+    uppercaseSlider.isContinuous = false
+    lowercaseSlider.isContinuous = false
+    numbersSlider.isContinuous = false
+    symbolsSlider.isContinuous = false
     
-    self.resetPasswordInView(self)
+    self.resetPasswordInView(sender: self)
   }
 
   override func didReceiveMemoryWarning() {
@@ -47,24 +47,24 @@ class ViewController: UIViewController {
     // Dispose of any resources that can be recreated.
   }
   
-  override func shouldAutorotate() -> Bool {
-    return false
-  }
+//  override func shouldAutorotate() -> Bool {
+//    return false
+//  }
   
 }
 
 extension ViewController {
   @IBAction func refreshPassword (sender: UIButton) {
-    self.resetPasswordInView(self)
+    self.resetPasswordInView(sender: self)
   }
   
   @IBAction func copyPassword (sender: UIButton) {
-    UIPasteboard.generalPasteboard().string = passwordField.text
+    UIPasteboard.general.string = passwordField.text
   }
   
   @IBAction func resetPasswordInView (sender: AnyObject) {
     
-    numberCalls++
+    numberCalls+=1
     
     password.lowercase = Int(lowercaseSlider.value)
     password.uppercase = Int(uppercaseSlider.value)

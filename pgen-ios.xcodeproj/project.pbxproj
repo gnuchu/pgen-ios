@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AE3209B61B94D5FE0071C6EE /* PasswordGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3209B51B94D5FE0071C6EE /* PasswordGenerator.swift */; settings = {ASSET_TAGS = (); }; };
+		AE3209B61B94D5FE0071C6EE /* PasswordGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3209B51B94D5FE0071C6EE /* PasswordGenerator.swift */; };
 		AE667A851B939C5E00439F29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE667A841B939C5E00439F29 /* AppDelegate.swift */; };
 		AE667A871B939C5E00439F29 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE667A861B939C5E00439F29 /* ViewController.swift */; };
 		AE667A8A1B939C5E00439F29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE667A881B939C5E00439F29 /* Main.storyboard */; };
@@ -108,6 +108,7 @@
 					AE667A7E1B939C5E00439F29 = {
 						CreatedOnToolsVersion = 6.4;
 						DevelopmentTeam = 6U6HLZXDTU;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -265,11 +266,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 6U6HLZXDTU;
 				INFOPLIST_FILE = "pgen-ios/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gnuchu.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -279,11 +283,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 6U6HLZXDTU;
 				INFOPLIST_FILE = "pgen-ios/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gnuchu.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
